@@ -9,39 +9,39 @@ import {v4 as uuidv4} from 'uuid'
 
 
 function App() {
+  // React To Print
   const componentRef = useRef()
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   })
   // State variables
   const [img, setImg] = useState()
-
   const [personal, setPersonal] = useState([
-    {id: 'FirstName', value: ''},
-    {id: 'LastName', value: ''},
-    {id: 'Title', value: ''},
-    {id: 'Address', value: ''},
-    {id: 'PhoneNumber', value: ''},
-    {id: 'Email', value: ''},
-    {id: 'Description', value: ''},
+    {id: 'FirstName', value: 'Pato'},
+    {id: 'LastName', value: 'Pato'},
+    {id: 'Title', value: 'Pato'},
+    {id: 'Address', value: 'Pato'},
+    {id: 'PhoneNumber', value: 'Pato'},
+    {id: 'Email', value: 'Pato'},
+    {id: 'Description', value: 'Pato'},
   ])
   const [experience, setExperience] = useState([
     {key: uuidv4(), experienceList:[
-      {id: 'Position', value: ''},
-      {id: 'Company', value: ''},
-      {id: 'City', value: ''},
-      {id: 'From', value: ''},
-      {id: 'To', value: ''}
+      {id: 'Position', value: 'Pato'},
+      {id: 'Company', value: 'Pato'},
+      {id: 'City', value: 'Pato'},
+      {id: 'From', value: 'Pato'},
+      {id: 'To', value: 'Pato'}
     ]}
   ])
   const [education, setEducation] = useState([
     {key: uuidv4(), educationList:[
-      {id: 'University', value: ''},
-      {id: 'City', value: ''},
-      {id: 'Degree', value: ''},
-      {id: 'Subject', value: ''},
-      {id: 'From', value: ''},
-      {id: 'To', value: ''}
+      {id: 'University', value: 'Pato'},
+      {id: 'City', value: 'Pato'},
+      {id: 'Degree', value: 'Pato'},
+      {id: 'Subject', value: 'Pato'},
+      {id: 'From', value: 'Pato'},
+      {id: 'To', value: 'Pato'}
     ]}
   ])
   const updateProfileImg = (e) => {
@@ -79,11 +79,11 @@ function App() {
   const addExperience = (e) => {
     const oldExperience = experience
     oldExperience.push({key: uuidv4(), experienceList:[
-      {id: 'Position', value: ''},
-      {id: 'Company', value: ''},
-      {id: 'City', value: ''},
-      {id: 'From', value: ''},
-      {id: 'To', value: ''}
+      {id: 'Position', value: 'Pato'},
+      {id: 'Company', value: 'Pato'},
+      {id: 'City', value: 'Pato'},
+      {id: 'From', value: 'Pato'},
+      {id: 'To', value: 'Pato'}
     ]})
     setExperience([...oldExperience])    
   }
@@ -96,7 +96,7 @@ function App() {
     oldEducation.splice(i, 1, {id:e.target.name, value: e.target.value})
     edList[index].educationList = oldEducation
     setEducation([...edList]) 
-    console.log(education, personal, experience)
+    console.log(education)
   }
   const deleteEducation = (e) => {
     const key = e.target.parentElement.dataset.key
@@ -109,12 +109,12 @@ function App() {
   const addEducation = (e) => {
     const oldEducation = education
     oldEducation.push({key: uuidv4(), educationList:[
-      {id: 'University', value: ''},
-      {id: 'City', value: ''},
-      {id: 'Degree', value: ''},
-      {id: 'Subject', value: ''},
-      {id: 'From', value: ''},
-      {id: 'To', value: ''}
+      {id: 'University', value: 'Pato'},
+      {id: 'City', value: 'Pato'},
+      {id: 'Degree', value: 'Pato'},
+      {id: 'Subject', value: 'Pato'},
+      {id: 'From', value: 'Pato'},
+      {id: 'To', value: 'Pato'}
     ]})
     setEducation([...oldEducation])    
   }  

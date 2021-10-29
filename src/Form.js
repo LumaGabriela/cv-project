@@ -24,20 +24,14 @@ export default function Form(
             updateExperienceField={updateExperienceField}
             experience={experience}
             addExperience={addExperience}
-            deleteExperience={deleteExperience}
-           
+            deleteExperience={deleteExperience}     
             />
-
             <Education 
             updateEducationField={updateEducationField}
             education={education}
             addEducation={addEducation}
             deleteEducation={deleteEducation}
-            
-            />
-            
-             
-             
+            />          
         </form>
     )
 }

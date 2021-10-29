@@ -1,8 +1,9 @@
 :root{
   --dark: #777;
   --black: #333;
-  --blue:#0e004e;
+  --blue:#131950;
   --white: #ccc;
+  --orange:#d45a29;
 }
 *, **before, **::after{box-sizing: border-box;}
 html, body{margin:0}
@@ -11,6 +12,7 @@ html, body{margin:0}
   flex-direction: column;
   align-items: center;
   margin: 0;
+  font-size: 1.2rem;
   width: 100%; height: auto;
 }
 .header{
@@ -34,8 +36,7 @@ html, body{margin:0}
   width: 100%;
   height: max-content;
 }
-#description{height: 25rem;}
-#description, .education, .experience{
+#description,#education, .education,#experience, .experience{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +44,7 @@ html, body{margin:0}
   width: 100%
 }
 #experience, #education{
+  display: flex; flex-direction: column;
   width: 100%;
 }
 
@@ -52,7 +54,7 @@ html, body{margin:0}
   width: 80%; height: 1.8rem;
   border: 1px solid var(--dark);
   cursor: pointer;
-  margin: .7rem 0;
+  margin: .5rem 0;
 }
 #description .label.description{ height: 2.8rem;}
 .input{
@@ -70,14 +72,39 @@ html, body{margin:0}
   align-items: center;
 }
 .ProfileImg{
-  width: 15rem; height: 15rem;
+  width: 10rem; height: 10rem;
+  border-radius: 200px;
 }
 #Cv-form{
   box-sizing: border-box;
   display: flex; padding: 1rem;
-  /* align-items: center; */
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%; height: 100vh;
-  background: var(--blue);
+  background: var(--dark);
   color: var(--white);
+}
+.Cv{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 60%; height: 100%;
+  background: var(--orange);
+  text-align: left;
+  padding: 1rem;
+}
+.Cv > section{width: 100%;}
+.Cv.Title{height: 10rem}
+.Cv.Personal{
+  width: 30%;
+  background: var(--blue);
+}
+h1, h2, h3{margin: 0;}
+.Cv > h1{font-size: 1.9rem;}
+.duration{font-weight: bolder;}
+ion-icon{
+  height: 1rem;
 }
