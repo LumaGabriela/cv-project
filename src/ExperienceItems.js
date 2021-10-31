@@ -1,7 +1,9 @@
+import { FaBackspace } from 'react-icons/fa'
 export default function ExperienceItems({
     updateExperienceField, 
     deleteExperience,
-    id
+    id,
+    DeleteBtn
 }){
     return(
     <section className='experience' data-key={id}>
@@ -25,7 +27,8 @@ export default function ExperienceItems({
             <input type='text' className='input' onChange={updateExperienceField}
             name='To' placeholder='To'></input>
         </label>
-        <button type='button' className='btn' onClick={deleteExperience}>Delete</button>       
+        <button type='button' className='Remove btn' onClick={deleteExperience}>
+            <FaBackspace /></button>       
     </section>
     )
 }

@@ -18,7 +18,7 @@ export default function Education({
     <section id='education' >
         <h2>Education</h2>
         {EducationFields}
-        <button type='button' className='btn' onClick={addEducation}>Add</button>
+        <button type='button' className='Add btn' onClick={addEducation}>Add</button>
     </section>
     )
 }

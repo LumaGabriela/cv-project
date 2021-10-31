@@ -12,7 +12,8 @@ export default function Form(
     education, 
     updateEducationField,
     addEducation,
-    deleteEducation
+    deleteEducation,
+    handlePrint
     }){    
     return(
         <form id='form'>
@@ -24,14 +25,16 @@ export default function Form(
             updateExperienceField={updateExperienceField}
             experience={experience}
             addExperience={addExperience}
-            deleteExperience={deleteExperience}     
+            deleteExperience={deleteExperience}    
             />
             <Education 
             updateEducationField={updateEducationField}
             education={education}
             addEducation={addEducation}
             deleteEducation={deleteEducation}
-            />          
+            />  
+            <button className='Print btn' type='button' onClick={handlePrint}>Print it</button>
+              
         </form>
     )
 }

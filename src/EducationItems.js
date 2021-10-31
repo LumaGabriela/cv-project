@@ -29,7 +29,7 @@ export default function EducationItems({
             <input type='text' className='input' onChange={updateEducationField}
             name='To' placeholder='To'></input>
         </label>
-        <button type='button' className='btn' onClick={deleteEducation}>Delete</button>
+        <button type='button' className='Remove btn' onClick={deleteEducation}>Delete</button>
        
     </section>
     )

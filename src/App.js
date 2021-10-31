@@ -17,31 +17,31 @@ function App() {
   // State variables
   const [img, setImg] = useState()
   const [personal, setPersonal] = useState([
-    {id: 'FirstName', value: 'Pato'},
-    {id: 'LastName', value: 'Pato'},
-    {id: 'Title', value: 'Pato'},
-    {id: 'Address', value: 'Pato'},
-    {id: 'PhoneNumber', value: 'Pato'},
-    {id: 'Email', value: 'Pato'},
-    {id: 'Description', value: 'Pato'},
+    {id: 'FirstName', value: 'Charles'},
+    {id: 'LastName', value: 'Castro'},
+    {id: 'Title', value: 'Developer'},
+    {id: 'Address', value: 'Fake address, 77'},
+    {id: 'PhoneNumber', value: '12334667'},
+    {id: 'Email', value: 'example.email@gmail.com'},
+    {id: 'Description', value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar ultrices ornare. In sapien arcu, cursus in tortor non, porttitor dignissim purus. In hac habitasse platea dictumst. Vestibulum mollis dolor tortor, vitae posuere urna dapibus ac.'},
   ])
   const [experience, setExperience] = useState([
     {key: uuidv4(), experienceList:[
-      {id: 'Position', value: 'Pato'},
-      {id: 'Company', value: 'Pato'},
-      {id: 'City', value: 'Pato'},
-      {id: 'From', value: 'Pato'},
-      {id: 'To', value: 'Pato'}
+      {id: 'Position', value: 'Web Developer'},
+      {id: 'Company', value: 'Duck.INC'},
+      {id: 'City', value: 'Michigan'},
+      {id: 'From', value: '2015'},
+      {id: 'To', value: '2020'}
     ]}
   ])
   const [education, setEducation] = useState([
     {key: uuidv4(), educationList:[
-      {id: 'University', value: 'Pato'},
-      {id: 'City', value: 'Pato'},
-      {id: 'Degree', value: 'Pato'},
-      {id: 'Subject', value: 'Pato'},
-      {id: 'From', value: 'Pato'},
-      {id: 'To', value: 'Pato'}
+      {id: 'University', value: 'University of Chicago'},
+      {id: 'City', value: 'Illinois'},
+      {id: 'Degree', value: 'Major'},
+      {id: 'Subject', value: 'Computer Science'},
+      {id: 'From', value: '2010'},
+      {id: 'To', value: '2015'}
     ]}
   ])
   const updateProfileImg = (e) => {
@@ -132,8 +132,8 @@ function App() {
       updateEducationField={updateEducationField}
       deleteEducation={deleteEducation}
       addEducation={addEducation}
+      handlePrint={handlePrint}
       />
-      <button className='btn' onClick={handlePrint}>Print it</button>
       < CvToPrint 
       personal={personal}
       experience={experience}
