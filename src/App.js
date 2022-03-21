@@ -74,7 +74,6 @@ function App() {
     let oldExperience = experience
     oldExperience.splice(index, 1)
     setExperience([...oldExperience])
-    console.log(oldExperience)
   }
   const addExperience = (e) => {
     const oldExperience = experience
@@ -96,7 +95,6 @@ function App() {
     oldEducation.splice(i, 1, {id:e.target.name, value: e.target.value})
     edList[index].educationList = oldEducation
     setEducation([...edList]) 
-    console.log(education)
   }
   const deleteEducation = (e) => {
     const key = e.target.parentElement.dataset.key
@@ -104,7 +102,6 @@ function App() {
     let oldEducation = education
     oldEducation.splice(index, 1)
     setEducation([...oldEducation])
-    console.log(oldEducation)
   }
   const addEducation = (e) => {
     const oldEducation = education

@@ -1,3 +1,4 @@
+import { FaBackspace } from 'react-icons/fa'
 export default function EducationItems({
     updateEducationField, 
     deleteEducation,
@@ -29,7 +30,7 @@ export default function EducationItems({
             <input type='text' className='input' onChange={updateEducationField}
             name='To' placeholder='To'></input>
         </label>
-        <button type='button' className='Remove btn' onClick={deleteEducation}>Delete</button>
+        <button type='button' className='Remove btn' onClick={deleteEducation}><FaBackspace /></button>
        
     </section>
     )
